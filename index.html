@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milo Carroll</title>
+  <meta name="description" content="Milo Carroll — robotics and machine learning research, projects and demos.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#projects">Milo Carroll</a>
+      <div class="nav-right">
+        <a class="tab" href="#projects" data-tab="projects">Projects</a>
+        <a class="tab" href="#demos" data-tab="demos">Demos</a>
+        <a class="cv" href="assets/papers/cv.pdf" download="Milo_Carroll_CV.pdf">CV <span aria-hidden="true">↓</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Optional background loop: drop a compressed clip at assets/videos/hero.mp4 -->
+    <video class="hero-bg" src="assets/videos/hero.mp4" autoplay muted loop playsinline
+           onerror="this.remove()"></video>
+    <div class="hero-inner">
+      <p class="label">PhD in AI · UCL · Robot Learning</p>
+      <h1>Milo Carroll</h1>
+      <p class="lede">
+        Teaching robots to move — humanoid locomotion and dexterous manipulation, learned from data.
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- PROJECTS ========================================================== -->
+    <!-- To add a project: copy one <article class="project"> block, newest first,
+         and bump its number. -->
+    <section id="panel-projects" class="tab-panel" data-tab="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="label">Research &amp; Papers</span>
+      </div>
+
+      <div class="project-grid">
+        <article class="project">
+          <div class="media">
+            <video src="assets/videos/rai-recursive-accelerated-imitation.mp4" controls playsinline preload="none"
+                   poster="assets/images/rai-video-poster.jpg"></video>
+          </div>
+          <p class="label">01 — ICRA 2027 · Under review</p>
+          <h3>RAI: Recursive Accelerated Imitation for Robot Manipulation</h3>
+          <p class="authors"><strong>Milo Carroll</strong> · First author</p>
+          <p class="summary">A recursive self-improvement scheme that deploys the policy at 2× speed to collect out-of-distribution fast-behaviour data, driving success toward 100% at 5× the base cycle rate.</p>
+          <p class="actions">
+            <a href="assets/papers/rai-recursive-accelerated-imitation.pdf" download="Carroll_RAI_ICRA2027.pdf">Paper <span aria-hidden="true">↓</span></a>
+            <a href="assets/videos/rai-recursive-accelerated-imitation.mp4" data-lightbox>Video <span aria-hidden="true">▶</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img src="assets/images/project-02.jpg" alt="" onerror="this.remove()">
+          </div>
+          <p class="label">02 — ICLR 2027 · Under review</p>
+          <h3>Controllability of Pretrained Visual Representations under Start-Controlled Evaluation on Multi-Object Scenes</h3>
+          <p class="authors"><strong>Milo Carroll</strong> · First author</p>
+          <p class="summary">A new latent world-model representation, raising cube-stacking success from 1% to over 36%.</p>
+          <p class="actions">
+            <a href="assets/papers/controllability-pretrained-visual-representations.pdf" download="Carroll_Controllability_ICLR2027.pdf">Paper <span aria-hidden="true">↓</span></a>
+            <a href="https://openreview.net/forum?id=cXr1yFCvSd">OpenReview <span aria-hidden="true">→</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img src="assets/images/project-03.jpg" alt="" onerror="this.remove()">
+          </div>
+          <p class="label">03 — CVPR 2027 · In preparation</p>
+          <h3>Efficient Distillation of Deep Thought VLAs: Rectified Depth</h3>
+          <p class="authors"><strong>Milo Carroll</strong> · First author</p>
+          <p class="summary">Shows the recurrent-depth transformer action head is a contraction, distilling its 32-step converged latent into a single-step generator that matches full depth (93.1% vs. 90.5% on LIBERO) at 8.7× lower latency — 250 Hz inference.</p>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <img src="assets/images/project-04.jpg" alt="" onerror="this.remove()">
+          </div>
+          <p class="label">04 — NeurIPS PTA 2026</p>
+          <h3>Start-Controlled Evaluation of JEPA Controllers: Test-Time Search Collapses on Manipulation, and Amortization Needs a Horizon It Should Infer</h3>
+          <p class="authors"><strong>Milo Carroll</strong> · First author</p>
+          <p class="summary">Identifies weaknesses in current evaluation frameworks for latent world-model controllers and proposes a more robust protocol that reflects observed policy behaviour.</p>
+          <p class="actions">
+            <a href="assets/papers/start-controlled-evaluation-jepa-controllers.pdf" download="Carroll_StartControlled_JEPA_NeurIPS-PTA2026.pdf">Paper <span aria-hidden="true">↓</span></a>
+            <a href="https://openreview.net/forum?id=JbBZYd0r4j">OpenReview <span aria-hidden="true">→</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <video src="assets/videos/scdp-humanoid-locomotion.mp4" controls playsinline preload="none"
+                   poster="assets/images/project-05.jpg"></video>
+          </div>
+          <p class="label">05 — arXiv 2026 · Preprint</p>
+          <h3>SCDP: Learning Humanoid Locomotion from Partial Observations via Mixed-Observation Distillation</h3>
+          <p class="authors"><strong>Milo Carroll</strong> · First author</p>
+          <p class="summary">A diffusion-based humanoid locomotion policy that conditions on onboard sensor histories while supervising against privileged future state-action trajectories, removing the need for explicit state estimation at deployment.</p>
+          <p class="actions">
+            <a href="https://arxiv.org/abs/2603.09574">arXiv <span aria-hidden="true">→</span></a>
+            <a href="assets/videos/scdp-humanoid-locomotion.mp4" data-lightbox>Video <span aria-hidden="true">▶</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <video src="assets/videos/learning-versatile-robot-locomotion.mp4" controls playsinline preload="none"
+                   poster="assets/images/learning-versatile-poster.jpg"></video>
+          </div>
+          <p class="label">06 — 2024</p>
+          <h3>Learning Versatile Robot Locomotion: Conditional Adversarial Imitation Learning with Disentangled Skill Conditions</h3>
+          <p class="authors"><strong>Milo Carroll</strong></p>
+          <p class="summary">A single unified quadruped policy, learned by conditional adversarial imitation from unstructured motion data, that performs flips, handstands, galloping and multiple gaits, interpolates between skills, and is reused by a visual task-level policy for robot parkour.</p>
+          <p class="actions">
+            <a href="assets/papers/learning-versatile-robot-locomotion.pdf" download="Carroll_Learning_Versatile_Robot_Locomotion_2024.pdf">Paper <span aria-hidden="true">↓</span></a>
+            <a href="assets/videos/learning-versatile-robot-locomotion.mp4" data-lightbox>Video <span aria-hidden="true">▶</span></a>
+          </p>
+        </article>
+
+        <article class="project">
+          <div class="media">
+            <iframe src="https://www.youtube-nocookie.com/embed/bUZJadWCRXU" title="Agile and Versatile Robot Locomotion via Kernel-based Residual Learning"
+                    loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                    allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          </div>
+          <p class="label">07 — ICRA 2023</p>
+          <h3>Agile and Versatile Robot Locomotion via Kernel-Based Residual Reinforcement Learning</h3>
+          <p class="authors"><strong>Milo Carroll</strong> · First author</p>
+          <p class="summary">Learned MPC motion priors adapted with residual RL for robust blind locomotion on the Unitree A1, outperforming the MPC baseline.</p>
+          <p class="actions">
+            <a href="https://ieeexplore.ieee.org/document/10160704">IEEE Xplore <span aria-hidden="true">→</span></a>
+            <a href="https://www.youtube.com/watch?v=bUZJadWCRXU" data-lightbox>Video <span aria-hidden="true">▶</span></a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- DEMOS ============================================================= -->
+    <!-- Short clips: commit via scripts/compress-video.sh and use <video>.
+         Long videos: upload to YouTube and swap the <video> for
+         <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+    <section id="panel-demos" class="tab-panel" data-tab="demos">
+      <div class="section-head">
+        <h2>Demos</h2>
+        <span class="label">Video</span>
+      </div>
+
+      <div class="demo-grid">
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/rai-recursive-accelerated-imitation.mp4" controls playsinline preload="none"
+                   poster="assets/images/rai-video-poster.jpg"></video>
+          </div>
+          <p class="label">01 — RAI · ICRA 2027 · Under review</p>
+          <p class="summary">Turbo-mode accelerated execution, contact sensing, and round-by-round gains in speed and success on power plug insertion, flange assembly and multi-pin insertion, compared with teleoperation-only training and π0.5.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/scdp-humanoid-locomotion.mp4" controls playsinline preload="none"
+                   poster="assets/images/project-05.jpg"></video>
+          </div>
+          <p class="label">02 — SCDP · arXiv 2026</p>
+          <p class="summary">Method overview, comparison with behaviour cloning and BeyondMimic under partial observations, sim-to-sim transfer (Isaac Lab → MuJoCo), and real-robot walking.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/learning-versatile-robot-locomotion.mp4" controls playsinline preload="none"
+                   poster="assets/images/learning-versatile-poster.jpg"></video>
+          </div>
+          <p class="label">03 — Versatile Locomotion · 2024</p>
+          <p class="summary">Disentangled skill representations, a reusable low-level motor controller, a perceptual high-level policy compared with training from scratch, and real-robot deployments of trotting and perceptual locomotion.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <iframe src="https://www.youtube-nocookie.com/embed/bUZJadWCRXU" title="Agile and Versatile Robot Locomotion via Kernel-based Residual Learning"
+                    loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                    allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+          </div>
+          <p class="label">04 — Kernel-Based Residual RL · ICRA 2023</p>
+          <p class="summary">Blind locomotion on the Unitree A1: learned MPC motion priors adapted with residual reinforcement learning.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/gim-02.mp4" controls playsinline preload="none" muted
+                   poster="assets/images/gim-02.jpg"></video>
+          </div>
+          <p class="label">05 — Real-robot manipulation</p>
+          <p class="summary">An uninterrupted run of 105 power plug insertions with a live counter: 102 successes, a 98% success rate.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/gim-01.mp4" controls playsinline preload="none" muted
+                   poster="assets/images/gim-01.jpg"></video>
+          </div>
+          <p class="label">06 — Real-robot manipulation</p>
+          <p class="summary">Clearing a cluttered table of mixed tools and parts into a bin.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/gim-03.mp4" controls playsinline preload="none" muted
+                   poster="assets/images/gim-03.jpg"></video>
+          </div>
+          <p class="label">07 — Real-robot manipulation</p>
+          <p class="summary">Flange assembly while a person moves the parts mid-task, so the policy has to recover and re-grasp.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/gim-04.mp4" controls playsinline preload="none" muted
+                   poster="assets/images/gim-04.jpg"></video>
+          </div>
+          <p class="label">08 — Real-robot manipulation</p>
+          <p class="summary">A long-horizon sequence inserting multiple pins into a fixture.</p>
+        </article>
+
+        <article class="demo">
+          <div class="media">
+            <video src="assets/videos/gim-05.mp4" controls playsinline preload="none" muted
+                   poster="assets/images/gim-05.jpg"></video>
+          </div>
+          <p class="label">09 — Real-robot manipulation</p>
+          <p class="summary">A close-up of the flange being seated on its mount.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Milo Carroll</span>
+    <a href="#projects">Back to top ↑</a>
+  </footer>
+
+  <!-- Pop-up video player, opened by any link with data-lightbox. -->
+  <dialog class="lightbox" aria-label="Video player">
+    <button class="lightbox-close" type="button">Close <span aria-hidden="true">✕</span></button>
+    <div class="lightbox-media"></div>
+  </dialog>
+
+  <script>
+    // Show one tab panel at a time, chosen by the URL hash (default: projects).
+    // Panel ids are prefixed so the browser doesn't jump-scroll to them.
+    // Without JS both panels simply show, one after the other.
+    (function () {
+      var panels = document.querySelectorAll('.tab-panel');
+      var tabs = document.querySelectorAll('.tab');
+      var first = true;
+      function show() {
+        var id = location.hash.slice(1);
+        if (!document.getElementById('panel-' + id)) id = 'projects';
+        panels.forEach(function (p) { p.hidden = p.dataset.tab !== id; });
+        tabs.forEach(function (t) { t.classList.toggle('active', t.dataset.tab === id); });
+        // On tab switch, jump past the hero to the content.
+        if (!first) {
+          var top = document.querySelector('main').offsetTop - 64;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+        first = false;
+      }
+      window.addEventListener('hashchange', show);
+      show();
+
+      // Video pop-up: links with data-lightbox open their video over the page.
+      // Without JS the link just opens the video file / YouTube page.
+      var box = document.querySelector('.lightbox');
+      var stage = box.querySelector('.lightbox-media');
+      function youtubeId(url) {
+        var m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([\w-]{11})/);
+        return m && m[1];
+      }
+      document.querySelectorAll('[data-lightbox]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelectorAll('video').forEach(function (v) { v.pause(); });
+          var url = link.getAttribute('href');
+          var yt = youtubeId(url);
+          if (yt) {
+            stage.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + yt +
+              '?autoplay=1" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';
+          } else {
+            var v = document.createElement('video');
+            v.src = url;
+            v.controls = true;
+            v.autoplay = true;
+            v.playsInline = true;
+            stage.replaceChildren(v);
+          }
+          box.showModal();
+          document.body.classList.add('no-scroll');
+        });
+      });
+      box.querySelector('.lightbox-close').addEventListener('click', function () { box.close(); });
+      // Clicking the dark backdrop (outside the player) closes it.
+      box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+      // Esc closes natively; always stop playback on close.
+      box.addEventListener('close', function () {
+        stage.replaceChildren();
+        document.body.classList.remove('no-scroll');
+      });
+
+      // Header goes solid once the hero is scrolled past.
+      var header = document.querySelector('.site-header');
+      function onScroll() { header.classList.toggle('solid', window.scrollY > 40); }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+</body>
+</html>
