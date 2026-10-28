@@ -1,5 +1,7 @@
 # PersonalSite
 
+**Live site: https://mi-robotics.github.io/PersonalSite/**
+
 Hand-written static site (HTML + CSS, no build step) hosted free on GitHub Pages.
 
 ## Layout
@@ -41,4 +43,5 @@ Copy an `<article class="demo">` block in the Demos section of `index.html`.
 
 ## Deploy
 
-Push to `main`. Pages setting: Settings → Pages → Deploy from branch → `main` / `(root)`.
+Push to `main`. The `.github/workflows/pages.yml` workflow deploys the site in about a minute
+(Pages setting: Settings → Pages → Source → GitHub Actions).
